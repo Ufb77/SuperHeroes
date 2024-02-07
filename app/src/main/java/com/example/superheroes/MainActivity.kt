@@ -46,7 +46,7 @@ fun SuperAplicacion(){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun BarraSuperior(modifier: Modifier = Modifier) {
+fun BarraSuperior() {
     CenterAlignedTopAppBar(title = {
 
         Text(text = stringResource(id = R.string.app_name),
@@ -58,6 +58,6 @@ fun BarraSuperior(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     SuperHeroesTheme {
-        BarraSuperior()
+        SuperAplicacion()
     }
 }
